@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaySmart</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HOME SCREEN -->
+
+    <div class="header">
+        <h2>PaySmart</h2>
+        <p>Welcome to Smart Payments</p>
+    </div>
+
+    <div class="balance">
+        <p>Demo Wallet Balance</p>
+        <h1>₹ 5,000</h1>
+    </div>
+
+    <div class="services">
+
+        <button onclick="openSendMoney()">
+            Send Money
+        </button>
+
+        <button onclick="openScanner()">
+            Scan QR
+        </button>
+
+        <button onclick="openHistory()">
+            Transaction History
+        </button>
+
+    </div>
+
+
+    <!-- SEND MONEY SCREEN -->
+
+    <div id="sendScreen" style="display:none; padding:20px;">
+
+        <h2>Send Money</h2>
+
+        <label>Recipient UPI ID</label>
+
+        <input
+            type="text"
+            id="upiId"
+            placeholder="example@upi"
+        >
+
+        <br><br>
+
+        <label>Enter Amount</label>
+
+        <input
+            type="number"
+            id="amount"
+            placeholder="Enter amount"
+        >
+
+        <br><br>
+
+        <button onclick="makePayment()">
+            Continue
+        </button>
+
+        <button onclick="goHome()">
+            Back
+        </button>
+
+        <p id="message"></p>
+
+    </div>
+
+
+    <!-- TRANSACTION HISTORY SCREEN -->
+
+    <div id="historyScreen" style="display:none; padding:20px;">
+
+        <h2>Transaction History</h2>
+
+        <div id="historyList">
+            <p>No transactions yet.</p>
+        </div>
+
+        <button onclick="goHome()">
+            Back to Home
+        </button>
+
+    </div>
+
+
+    <!-- QR SCANNER SCREEN -->
+
+    <div id="scannerScreen" style="display:none; padding:20px;">
+
+        <h2>Scan QR Code</h2>
+
+        <p>Place a QR code inside the camera view.</p>
+
+        <div id="reader" style="width:100%;"></div>
+
+        <p id="scanResult"></p>
+
+        <button onclick="stopScanner()">
+            Stop Scanner
+        </button>
+
+        <button onclick="goHome()">
+            Back to Home
+        </button>
+
+    </div>
+
+
+    <!-- JAVASCRIPT FILES -->
+
+    <script src="https://unpkg.com/html5-qrcode"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

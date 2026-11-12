@@ -1,0 +1,168 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f4fa;
+    color: #222;
+}
+
+/* HOME HEADER */
+
+.header {
+    background: #5426b5;
+    color: white;
+    padding: 35px 25px;
+    border-radius: 0 0 25px 25px;
+}
+
+.header h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+}
+
+/* BALANCE CARD */
+
+.balance {
+    background: white;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.balance p {
+    font-size: 18px;
+}
+
+.balance h1 {
+    font-size: 36px;
+    color: #5426b5;
+}
+
+/* HOME BUTTONS */
+
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+/* COMMON BUTTON DESIGN */
+
+button {
+    background: #5426b5;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:active {
+    background: #35147e;
+}
+
+/* ALL SCREEN HEADINGS */
+
+#sendScreen h2,
+#historyScreen h2,
+#scannerScreen h2 {
+    color: #5426b5;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+/* SEND MONEY SCREEN */
+
+#sendScreen {
+    padding: 25px;
+}
+
+#sendScreen label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#sendScreen input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    background: white;
+}
+
+#sendScreen button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* MESSAGE */
+
+#message {
+    color: #5426b5;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* TRANSACTION HISTORY */
+
+#historyScreen {
+    padding: 25px;
+}
+
+#historyList {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    overflow-wrap: anywhere;
+}
+
+#historyList p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* QR SCANNER */
+
+#scannerScreen {
+    padding: 25px;
+}
+
+#scannerScreen p {
+    font-size: 16px;
+}
+
+#reader {
+    width: 100%;
+    margin-top: 20px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#scannerScreen button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+#scanResult {
+    color: #5426b5;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
